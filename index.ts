@@ -1,5 +1,6 @@
 import { Command } from "commander";
 import readApplicationData from "./storage/applications.js";
+import authenticateGmail from "./gmail/auth.js"
 
 const program = new Command();
 
@@ -9,5 +10,9 @@ program
   .action(async () => {
     console.table(await readApplicationData())
   });
+
+program.command("auth").description("Connect your Gmail account").action(async() => {
+  authenticateGmail()
+})
 
 program.parse(process.argv);
