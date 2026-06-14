@@ -5,7 +5,7 @@ import { writeFile } from "fs/promises";
 
 const GMAIL_SCOPE = "https://www.googleapis.com/auth/gmail.readonly";
 
-function createOAuthClient() {
+export function createOAuthClient() {
   const clientId = process.env.GOOGLE_CLIENT_ID;
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
   const redirectUri = process.env.GOOGLE_REDIRECT_URI;
