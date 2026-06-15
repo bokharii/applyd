@@ -6,7 +6,7 @@ export default async function fetchGmailList() {
     userId: "me",
     maxResults: 50,
     includeSpamTrash: true,
-    q: "application",
+    q: "in:sent (application OR applying OR \"thank you for applying\")",
   });
   const messages = response.data.messages ?? [];
 
