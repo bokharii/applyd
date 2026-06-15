@@ -17,7 +17,7 @@ export default async function fetchEmails(): Promise<Email[]> {
     }),
   );
 
-  const mailObj = mailList.flatMap((mail): Email | null => {
+  const mailObj = mailList.map((mail): Email | null => {
     const headers = mail.data.payload?.headers;
     const subjectHeader = headers?.find(
       (h) => h.name?.toLowerCase() === "subject",
