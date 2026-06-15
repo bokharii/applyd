@@ -3,15 +3,16 @@ import { Command } from "commander";
 import readApplicationData from "./storage/applications.js";
 import authenticateGmail from "./gmail/auth.js";
 import getGmailClient from "./gmail/client.js";
+import fetchGmailList from "./gmail/fetch.js";
 
 const program = new Command();
 
-program
-  .command("list")
-  .description("outputs a table with fake application data")
-  .action(async () => {
-    console.table(await readApplicationData());
-  });
+// program
+//   .command("list")
+//   .description("outputs a table with fake application data")
+//   .action(async () => {
+//     console.table(await readApplicationData());
+//   });
 
 program
   .command("auth")
@@ -21,19 +22,10 @@ program
   });
 
 program
-  .command("test")
-  .description("Test Gmail connection")
+  .command("list")
+  .description("List Past 50 Applications")
   .action(async () => {
-    const gmail = await getGmailClient();
-    const response = await gmail.users.messages.list({
-      userId: "me",
-      maxResults: 5,
-    })
-    const messages = response.data.messages ?? [];
-
-    for(const message of messages){
-      console.log(message.id)
-    }
+    await fetchGmailList();
   });
 
 program.parse(process.argv);
