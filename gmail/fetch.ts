@@ -9,6 +9,7 @@ export default async function fetchGmailList() {
     q: "in:sent (application OR applying OR \"thank you for applying\")",
   });
   const messages = response.data.messages ?? [];
+  messages.filter((m) => m.id != null)
 
   const maiLlist = await Promise.all(
     messages.map(async (message) => {
