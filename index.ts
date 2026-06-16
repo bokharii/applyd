@@ -3,15 +3,9 @@ import { Command } from "commander";
 import authenticateGmail from "./gmail/auth.js";
 import fetchEmail from "./gmail/fetch.js";
 import parseEmail from "./llm/parse.js";
+import toApplication from "./storage/merge.js";
 
 const program = new Command();
-
-// program
-//   .command("list")
-//   .description("outputs a table with fake application data")
-//   .action(async () => {
-//     console.table(await readApplicationData());
-//   });
 
 program
   .command("auth")
@@ -26,8 +20,11 @@ program
   .action(async () => {
     const messages = await fetchEmail();
     for (const mail of messages) {
-      const response = await parseEmail(mail);
-      console.log(response);
+      const parsed = await parseEmail(mail);
+      if (parsed) {
+        const application = toApplication(mail, parsed);
+        console.log(application);
+      }
     }
   });
 

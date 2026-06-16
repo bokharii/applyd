@@ -3,18 +3,18 @@
     "id": 1,
     "company": "blah",
     "status": "rejected",
-    "applicationSentDate": "february 15 2026"
+    "dateApplied": "february 15 2026"
   },
   {
     "id": 2,
     "company": "bleh",
     "status": "no response",
-    "applicationSentDate": "february 11 2026"
+    "dateApplied": "february 11 2026"
   },
   {
     "id": 3,
     "company": "cool",
     "status": "follow up",
-    "applicationSentDate": "february 15 2026"
+    "dateApplied": "february 15 2026"
   }
 ]

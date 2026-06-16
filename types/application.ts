@@ -1,6 +1,7 @@
 export type Application = {
-  id: number;
+  id: string;
   company: string;
   status: string;
-  applicationSentDate: string;
+  role: string;
+  dateApplied: string;
 };
