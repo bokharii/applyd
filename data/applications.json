@@ -1,20 +1,72 @@
 [
   {
-    "id": 1,
-    "company": "blah",
-    "status": "rejected",
-    "dateApplied": "february 15 2026"
+    "id": "19ece5abc606b1e2",
+    "company": "Cogniify",
+    "status": "application received",
+    "role": "Mid-Level Software Engineer - USA",
+    "dateApplied": "2026-06-16T02:55:13.000Z"
   },
   {
-    "id": 2,
-    "company": "bleh",
-    "status": "no response",
-    "dateApplied": "february 11 2026"
+    "id": "19ece59d84ac7f74",
+    "company": "Headstarter",
+    "status": "Received",
+    "role": "Software Engineer",
+    "dateApplied": "2026-06-16T02:54:16.000Z"
   },
   {
-    "id": 3,
-    "company": "cool",
-    "status": "follow up",
-    "dateApplied": "february 15 2026"
+    "id": "19ece59d84ac7f74",
+    "company": "Headstarter",
+    "status": "Received",
+    "role": "Software Engineer - Agents & FE",
+    "dateApplied": "2026-06-16T02:54:14.000Z"
+  },
+  {
+    "id": "19ece57dc5bd335c",
+    "company": "Stripe",
+    "status": "Under review",
+    "role": "Software Engineer",
+    "dateApplied": "2026-06-16T02:52:04.000Z"
+  },
+  {
+    "id": "19ecdb2f46b43c51",
+    "company": "NexTech Capital",
+    "status": "Sent",
+    "role": "Unknown",
+    "dateApplied": "2026-06-15T23:51:55.000Z"
+  },
+  {
+    "id": "19ecd9f88871e64d",
+    "company": "",
+    "status": "",
+    "role": "",
+    "dateApplied": "2026-06-15T23:30:44.000Z"
+  },
+  {
+    "id": "19ecd7ce6da208aa",
+    "company": "Rula",
+    "status": "applied",
+    "role": "Software Engineer 2 (Remote)",
+    "dateApplied": "2026-06-15T22:52:55.000Z"
+  },
+  {
+    "id": "19ecd33bab083b5d",
+    "company": "OuterBox",
+    "status": "Rejected",
+    "role": "Web Application Developer",
+    "dateApplied": "2026-06-15T21:32:58.000Z"
+  },
+  {
+    "id": "19ecd275faf305de",
+    "company": "Asset Panda",
+    "status": "Open",
+    "role": "Junior Engineer",
+    "dateApplied": "2026-06-15T21:19:28.000Z"
+  },
+  {
+    "id": "19eccecd92554e6a",
+    "company": "Everest",
+    "status": "received",
+    "role": "Junior Software Engineer – Full Stack",
+    "dateApplied": "2026-06-15T20:15:34.000Z"
   }
 ]

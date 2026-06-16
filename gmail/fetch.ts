@@ -5,7 +5,7 @@ export default async function fetchEmails(): Promise<Email[]> {
   const gmail = await getGmailClient();
   const response = await gmail.users.messages.list({
     userId: "me",
-    maxResults: 50,
+    maxResults: 10,
     includeSpamTrash: true,
     q: '(application OR applying OR "thank you for applying")',
   });
