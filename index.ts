@@ -2,6 +2,7 @@ import "dotenv/config";
 import { Command } from "commander";
 import authenticateGmail from "./gmail/auth.js";
 import fetchEmail from "./gmail/fetch.js";
+import parseEmail from "./llm/parse.js";
 
 const program = new Command();
 
@@ -25,7 +26,8 @@ program
   .action(async () => {
     const messages = await fetchEmail();
     for (const mail of messages) {
-      console.log(mail);
+      const response = await parseEmail(mail);
+      console.log(response);
     }
   });
 
