@@ -5,10 +5,10 @@ A CLI I built to help me look for new opporunities. Scans your Gmail for job app
 ## Commands
 
 ```bash
-npm run dev -- auth      # Connect Gmail (one-time)
-npm run dev -- sync      # Fetch + parse + update local storage
-npm run dev -- list      # Show all saved applications
-npm run dev -- summary   # Count applications by status
+npm run auth      # Connect Gmail (one-time)
+npm run sync      # Fetch + parse + update local storage
+npm run list      # Show all saved applications
+npm run summary   # Count applications by status
 ```
 
 ## Setup
@@ -34,13 +34,13 @@ npm run dev -- summary   # Count applications by status
 3. To authenticate:
 
    ```bash
-   npm run dev -- auth
+   npm run auth
    ```
 
 4. Sync and view:
 
    ```bash
-   npm run dev -- sync
-   npm run dev -- list
-   npm run dev -- summary
+   npm run sync
+   npm run list
+   npm run summary
    ```
