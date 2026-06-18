@@ -14,7 +14,7 @@ export async function getGroqChatCompletion(
       {
         role: "system",
         content:
-          "You extract job application info from emails. Return ONLY valid JSON with keys: company, role, status, dateApplied. No markdown, no explanation. All values must be strings, never null.",
+          "You extract job application info from emails. Return ONLY valid JSON with keys: company, role, status, dateApplied. No markdown, no explanation. All values must be strings, never null. Status must be exactly one of: applied, interview, rejected, offer, unknown - applied: application submitted, received, or under review- interview: interview invite or scheduling- rejected: rejection or not moving forward- offer: job offer extended- unknown: job alerts, newsletters, or unclearUse lowercase only. Never use: sent, received, submitted, under review.",
       },
       {
         role: "user",
