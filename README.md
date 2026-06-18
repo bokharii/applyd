@@ -1,6 +1,6 @@
 # Applyd
 
-A CLI that scans your Gmail for job application emails, uses an LLM to extract company, role, status, and date, and stores everything locally in JSON for fast lookup.
+A CLI I built to help me look for new opporunities. Scans your Gmail for job application emails, uses an LLM to extract company, role, status, and date, and stores everything locally in JSON for fast lookup.
 
 ## Commands
 
