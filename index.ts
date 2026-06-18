@@ -29,7 +29,7 @@ program
     existingApplications.forEach((application) =>
       cacheMap.set(application.id, application),
     );
-    
+
     const messages = await fetchEmail();
     for (const [i, mail] of messages.entries()) {
       const parsed = await parseEmail(mail);
@@ -51,6 +51,24 @@ program
   .action(async () => {
     const applications = await readApplicationData();
     console.table(applications);
+  });
+
+program
+  .command("summary")
+  .description("Summarize application data")
+  .action(async () => {
+    const applications = await readApplicationData();
+    const statusCounts = applications.reduce((acc, app) => {
+      const status = app.status;
+      acc[status] = (acc[status] || 0) + 1;
+      return acc;
+    }, {});
+
+    const rows = Object.entries(statusCounts).map(([status, count]) => ({
+      status,
+      count,
+    }));
+    console.table(rows);
   });
 
 program.parse(process.argv);
