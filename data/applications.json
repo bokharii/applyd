@@ -11,14 +11,14 @@
     "company": "optimum",
     "status": "applied",
     "role": "software dev engineer iii",
-    "dateApplied": "2026-06-18T16:30:42.000Z"
+    "dateApplied": "2026-06-18"
   },
   {
     "id": "19edb45cef1b415c",
     "company": "major league baseball",
     "status": "offer",
     "role": "associate software engineer, web platform architecture",
-    "dateApplied": "2026-06-18T15:07:25.000Z"
+    "dateApplied": "2026-06-18"
   },
   {
     "id": "19edb088ba8ed2a4",
@@ -29,37 +29,37 @@
   },
   {
     "id": "19edae60f6bba9d6",
-    "company": "SOCOTEC",
+    "company": "socotec",
     "status": "applied",
-    "role": "Software Engineer",
+    "role": "software engineer",
     "dateApplied": "2026-06-18T13:22:50.000Z"
   },
   {
     "id": "19ed873210462f30",
-    "company": "coinbase",
+    "company": "Coinbase",
     "status": "applied",
-    "role": "senior software engineer - blockchain network",
+    "role": "Senior Software Engineer - Blockchain Network",
     "dateApplied": "2026-06-18T01:58:03.000Z"
   },
   {
     "id": "19ed8665542b5d84",
     "company": "coinbase",
     "status": "applied",
-    "role": "unknown",
+    "role": "",
     "dateApplied": "2026-06-18T01:44:04.000Z"
   },
   {
     "id": "19ed8614aa41711f",
-    "company": "Empire State University",
+    "company": "empire state university",
     "status": "applied",
-    "role": "Front-End Web Developer (CMS & Digital Experience)",
+    "role": "front-end web developer (cms & digital experience)",
     "dateApplied": "2026-06-18T01:38:34.000Z"
   },
   {
     "id": "19ed814a702fbc26",
-    "company": "",
+    "company": "randstad digital",
     "status": "unknown",
-    "role": "",
+    "role": "unknown",
     "dateApplied": "2026-06-17T23:46:18.000Z"
   },
   {
@@ -67,6 +67,6 @@
     "company": "snapsheet",
     "status": "applied",
     "role": "remote software engineer",
-    "dateApplied": "2026-06-17"
+    "dateApplied": "2026-06-17T22:26:27.000Z"
   }
 ]
