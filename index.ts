@@ -22,12 +22,14 @@ program
   .command("sync")
   .description("Sync with latest Gmail data")
   .action(async () => {
+    // load existing applications
     const existingApplications = await readApplicationData();
 
     const cacheMap = new Map<string, Application>();
     existingApplications.forEach((application) =>
       cacheMap.set(application.id, application),
     );
+    
     const messages = await fetchEmail();
     for (const [i, mail] of messages.entries()) {
       const parsed = await parseEmail(mail);
