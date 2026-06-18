@@ -28,7 +28,7 @@ npm run dev -- summary   # Count applications by status
    GROQ_API_KEY=...
    ```
 
-   - **Google OAuth:** [Google Cloud Console](https://console.cloud.google.com/) — enable Gmail API, create a Desktop OAuth client, add yourself as a test user with `gmail.readonly` scope
+   - **Google OAuth:** [Google Cloud Console](https://console.cloud.google.com/) — in order to run this project you need to enable the Gmail API. create a Desktop OAuth client, add yourself as a test user with `gmail.readonly` scope
    - **Groq:** [console.groq.com](https://console.groq.com/) — create an API key
 
 3. To authenticate:
