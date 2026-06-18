@@ -2,6 +2,11 @@
 
 A CLI I built to help me look for new opporunities. Scans your Gmail for job application emails, uses an LLM to extract company, role, status, and date, and stores everything locally in JSON for fast lookup.
 
+## Demo
+
+[Here's a demo I recorded on Loom:](https://www.loom.com/share/65c8eb6ed16d43b7be87b8fd0b04950b)
+
+
 ## Commands
 
 ```bash
