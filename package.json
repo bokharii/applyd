@@ -5,8 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx index.ts"
+    "sync": "tsx index.ts sync",
+    "list": "tsx index.ts list",
+    "summary": "tsx index.ts summary",
+    "auth": "tsx index.ts auth"
   },
   "keywords": [],
   "author": "",
