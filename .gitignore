@@ -27,3 +27,5 @@ web-ext.config.ts
 
 .env
 token.json
+
+data/applications.json
