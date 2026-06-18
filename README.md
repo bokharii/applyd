@@ -4,15 +4,43 @@ A CLI that scans your Gmail for job application emails, uses an LLM to extract c
 
 ## Commands
 
-- `npm run dev -- auth` — connect your Gmail account (one-time setup)
-- `npm run dev -- list` — fetch, parse, and save applications to `data/applications.json`
+```bash
+npm run dev -- auth      # Connect Gmail (one-time)
+npm run dev -- sync      # Fetch + parse + update local storage
+npm run dev -- list      # Show all saved applications
+npm run dev -- summary   # Count applications by status
+```
 
 ## Setup
 
-1. Install dependencies: `npm install`
-2. Add Google OAuth credentials and `GROQ_API_KEY` to `.env`
-3. Run `npm run dev -- auth` to authenticate
+1. Install dependencies:
 
-## Stack
+   ```bash
+   npm install
+   ```
 
-Node.js, TypeScript, Commander, Gmail API, Groq, Zod
+2. Create a `.env` file in the project root:
+
+   ```env
+   GOOGLE_CLIENT_ID=...
+   GOOGLE_CLIENT_SECRET=...
+   GOOGLE_REDIRECT_URI=http://localhost
+   GROQ_API_KEY=...
+   ```
+
+   - **Google OAuth:** [Google Cloud Console](https://console.cloud.google.com/) — enable Gmail API, create a Desktop OAuth client, add yourself as a test user with `gmail.readonly` scope
+   - **Groq:** [console.groq.com](https://console.groq.com/) — create an API key
+
+3. To authenticate:
+
+   ```bash
+   npm run dev -- auth
+   ```
+
+4. Sync and view:
+
+   ```bash
+   npm run dev -- sync
+   npm run dev -- list
+   npm run dev -- summary
+   ```
